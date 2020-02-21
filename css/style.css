@@ -1,0 +1,483 @@
+/* ====================================================== 
+    Default Theme
+    -----------------------------------------------------
+    Fonts: Releway & Open Sans
+    -----------------------------------------------------
+    Colors:
+        Moon yellow:      #f4c613
+        Grey:             #212226
+        White Smoke:       #f4f4f4
+        White:             #fff
+        Black:              #000
+        =================================================*/
+/* ========================================================
+            Html, Body
+===========================================================*/
+body,
+html {
+    height: 100%;
+}
+body {
+    color: #212226;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Releway", sans-serif;
+}
+p {
+    font-family: "Open Sans" ,sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+Section {
+    background: white;
+    overflow: hidden;
+}
+#home {
+    background: none;
+    height: 100%;
+}
+
+/*  ====================================================
+                Preloader  
+    ====================================================*/
+#loader {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+#status {
+    background-image: url("../img/loader.gif");
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+/* ==================================================
+            Home Video
+    =================================================*/
+#bg-home-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background-image: url("../video/solo.jpg") no-repeat;
+    background-size: cover;
+}
+#home-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#home-content {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+#home-content-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+#home-heading h1 {
+    color: white;
+    font-size: 65px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 0;
+    display: inline-block;
+}
+#home-heading h1 span {
+    color: #f4c613;
+    font-weight: 500;
+}
+#home-text p {
+    color: white;
+    font-size: 17px;
+    font-weight: 100;
+    margin: 8px 0 30px;
+}
+/* =================================
+        Buttons
+===================================*/
+.btn-general {
+    font-family: 'Raleway', sans-serif;
+    border-radius: 28px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0 6px;
+    padding: 12px 46px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.btn-home {
+    color: #fff;
+    border: 1px solid #fff;
+}
+.btn-home:focus,
+.btn-home:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #f4c613;
+    border: 1px solid #f4c613;
+}
+/*======================================
+ Arrow down
+ ======================================== */
+#arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin-left: -15px;
+    z-index: 1;
+}
+
+/*======================================== 
+            Content Box
+==========================================*/
+.content-box-lg {
+    padding: 120px 0;
+}
+
+.content-box-md {
+    padding: 100px 0;
+}
+
+/*=========================================
+        vertical/Horizontal-Heading    
+==========================================*/
+
+.vertical-heading h5 {
+    color: #f4c613;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-spacing: 9px;
+    display: inline-block;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    position: relative;
+    top: 60px;
+    margin-left: -53px;
+}
+.vertical-heading h2 {
+    margin: 0 0 0 35px;
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 45px;
+}
+.horizontal-heading{
+    margin-bottom: 80px;
+}
+.horizontal-heading h5{
+    font-size: 16px;
+    color: #f4c613;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.horizontal-heading h2{
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 45px;
+    margin: 0;
+}
+
+
+/*======================================== 
+            About 01 
+==========================================*/
+#about-right p:first-child {
+    margin-bottom: 30px;
+}
+#about-buttom {
+    margin-top: 30px;
+}
+about-buttom img {
+    margin: 0 auto;
+}
+
+/*======================================== 
+            About 02 
+==========================================*/
+#about-02 {
+    background-color: #f4f4f4;
+}
+.about-item {
+    background-color: white;
+    padding: 80px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, -5);
+}
+.about-item i {
+    font-size: 42px;
+    margin: 0 0 19px;
+}
+.about-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.about-item hr {
+    width: 45px;
+    height: 3px;
+    background-color: #f4c613;
+}
+.about-item p {
+    margin-top: 20px;
+}
+
+/* Hover effect */
+.about-item:hover {
+    background-color: #f4c613;
+}
+.about-item:hover h3,
+.about-item:hover i,
+.about-item:hover p {
+    color: #fff;
+}
+.about-item:hover hr {
+    background: #fff;
+}
+.about-item:hover i {
+    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+}
+
+/* Smooth transition */
+.about-item h3,
+.about-item i,
+.about-item p {
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+}
+/* ======================================
+          Team 
+=======================================*/
+#team-left .vertical-heading {
+    min-height: 160px;
+}
+.team-member {
+    margin: 8px;
+    position: relative;
+}
+.team-member-over-lay {
+    background-color: rgb(33, 34, 38, .9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    transition: 300ms linear;
+    -webkit-transition: 300ms linear;
+    -moz-transition: 300ms linear;
+    -ms-transition: 300ms linear;
+    -o-transition: 300ms linear;
+}
+.team-member-info {
+    width: 100%;
+    height: 100%;
+    padding: 60px 0;
+}
+.team-member-info h6 {
+    color: #f4c613;
+    font-size: 16px;
+    margin: 0;
+}
+.team-member-info p {
+    color: #fff;
+
+}
+.team-member:hover .team-member-over-lay {
+    opacity: 1;
+}
+
+/* social icon */
+
+ul.social-list {
+    padding: 0;
+    margin-top: 70px;
+}
+ul.social-list li {
+    display: inline-block;
+    padding: 0;
+    margin-right: 10px;
+}
+ul.social-list li a {
+    border: 1px solid;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.social-list li:nth-child(1) a:hover {
+    background-color: #3b5998;
+    border-color: transparent;
+}
+.social-list li:nth-child(2) a:hover {
+    background-color: #38A1F3;
+    border-color: transparent;
+}
+.social-list li:nth-child(3) a:hover {
+    background-color: #db4a39;
+    border-color: transparent;
+}
+.owl-theme .owl-nav [class*=owl-] {
+    background: none;
+    color: gray;
+    margin: 0;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none;
+    color: black;
+}
+
+/* skill */
+.skill{
+    margin-bottom: 20px;
+}
+
+.skill h4{
+
+    line-height: 70px;
+    margin: 0;
+    font-weight: normal;
+}
+.progress{
+    height: 25px;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    background-color: #efefef;
+}
+.progress-bar{
+    background-color: #f4c613;
+}
+
+/*==================================
+            state
+=====================================*/
+
+#statement{
+    background-image: url(../img/tech/tech-quote.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#statement .content-box-lg{
+    background-color: rgb(0, 0,0,0.5);
+}
+#teach-statement h3{
+    color: white;
+    font-size: 28px;
+    line-height: 45px;
+}
+#teach-statement p{
+    color: #f4c613;
+    font-family: 'Releway',sans-serif;
+    margin-top: 8px;
+}
+#services-01- img{
+    margin: 60px 0;
+}
+.service{
+    margin: 35px 0 ;
+}
+.icon{
+    font-size: 42px;
+    margin: 0;
+    transition: all 400ms linear;
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+}
+.service :hover .icon{
+    transform: translateX(-20px);
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    -o-transform: translateX(-20px);
+    color: #f4c613;
+    cursor: pointer;
+}
+.service :hover h5{
+    color: #212226;
+}
+.service h4{
+    font: 24px;
+    margin: 0 0 8px 0;
+}
+.service p {
+    line-height: normal;
+}
+/*====================================
+Services of responsive tabs
+===================================== */
+#services0-2{
+    background: #f4f4f4;
+}
+#services-tabs ul{
+    margin-bottom: 45px;
+}
+
+#services-tabs ul li{
+    margin: 5px 30px ;
+}
+#services-tabs ul li a{
+    font-family: "Releway", sans-serif;
+    font-size: 13px;
+    color: #212226;
+    text-transform: uppercase;
+}
